@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React from "react";
-// import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
 
 const Box = styled(motion.a)`
@@ -25,18 +24,6 @@ const Box = styled(motion.a)`
   }
 `;
 
-const Image = styled.div`
-  background-image: ${(props) => `url(${props.img})`};
-  width: 100%;
-  height: 60%;
-  background-size: cover;
-  border: 1px solid transparent;
-  background-position: center center;
-
-  ${Box}:hover & {
-    border: 1px solid ${(props) => props.theme.body};
-  }
-`;
 const Title = styled.h3`
   color: inherit;
   padding: 0.5rem 0;
@@ -76,11 +63,10 @@ const Item = {
 };
 
 const BlogComponent = (props) => {
-  const { name, tags, date, imgSrc, link } = props.blog;
+  const { name, tags, date, link } = props.blog;
   return (
     <Container variants={Item}>
       <Box target="_blank" href={`${link}`}>
-        <Image img={imgSrc} />
         <Title>{name}</Title>
         <HashTags>
           {tags.map((t, id) => {

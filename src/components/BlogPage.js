@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import img from "../assets/Images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg"
+import img from "../assets/Images/Blog.jpg"
 import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons  from '../subComponents/SocialIcons'
 import PowerButton  from '../subComponents/PowerButton'
 
 import {Blogs} from '../data/BlogData';
 import BlogComponent from './BlogComponent'
-import BigTitle from "../subComponents/BigTitlte"
+import BigTitle from "../subComponents/BigTitle"
 import { motion } from 'framer-motion'
 
 
@@ -18,7 +18,7 @@ background-attachment: fixed;
 background-position: center;
 `
 const Container = styled.div`
-background-color: ${props => `rgba(${props.theme.bodyRgba},0.8)`};
+background-color: ${props => `rgba(${props.theme.bodyRgba},0.4)`};
 width: 100%;
 height:auto;
 

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 // import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
-import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
+import { Instagram, Github, Twitter, YouTube } from "../components/AllSvgs";
 import { DarkTheme } from "../components/Themes";
 
 const Icons = styled.div`
@@ -75,7 +75,7 @@ const SocialIcons = (props) => {
           target="_blank"
           href={"https://www.instagram.com/_kshitij_singh_/"}
         >
-          <Facebook
+          <Instagram
             width={25}
             height={25}
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}

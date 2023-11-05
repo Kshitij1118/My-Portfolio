@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import img from "../assets/Images/typography-19.jpg"
+import img from "../assets/Images/Artboard.png"
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
@@ -31,7 +31,7 @@ h2,h3,h4,h5,h6{
 `
 
 const Container = styled.div`
-background-color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
+background-color: ${props => `rgba(${props.theme.bodyRgba},0.2)`};
 width: 100%;
 height: 100%;
 
@@ -151,7 +151,7 @@ const Main = () => {
             <LogoComponent theme={click ? 'dark' :'light'}/>
             <SocialIcons theme={click ? 'dark' :'light'} />
             
-            <MainTitle text="Hello Everyone...." top="15%" left="30%" />
+            <MainTitle text="Hello Everyone.." top="15%" left="31%" />
 
             <Center click={click}>
                 <YinYang  onClick={()=> handleClick()} width={click ? 120 : 200} height={click ? 120 : 200} fill='currentColor' />
